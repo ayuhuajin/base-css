@@ -137,4 +137,18 @@ li {
 .readonly {
   pointer-events: none; }
 
+/****************************** 表格（form） ******************************/
+/* 奇数行 */
+table tr:nth-child(odd) {
+  background: #F4F4F4; }
+
+/* 偶数列 */
+table td:nth-child(even) {
+  color: #C00; }
+
+/* 第五行   */
+table tr:nth-child(5) {
+  background: #73B1E0;
+  color: #FFF; }
+
 /*# sourceMappingURL=common.css.map */

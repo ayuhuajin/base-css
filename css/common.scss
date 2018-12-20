@@ -168,3 +168,19 @@ li {
 .readonly{
   pointer-events: none;
 }
+
+// 水平垂直都居中
+@mixin levelVerticalCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/****************************** 表格（form） ******************************/
+/* 奇数行 */
+table tr:nth-child(odd){background:#F4F4F4;}
+/* 偶数列 */
+table td:nth-child(even){color:#C00;}      
+/* 第五行   */
+table tr:nth-child(5){background:#73B1E0;color:#FFF;}
