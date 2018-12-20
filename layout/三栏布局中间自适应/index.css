@@ -1,0 +1,165 @@
+html,body{
+	color:#14191e;
+}
+.layout{
+	margin-top: 5px;
+	border-bottom: 3px solid #ccc;
+	border-top: 3px solid #ccc;
+	text-align: center;
+}
+.left,.right{
+	width: 300px;
+}
+.left{
+	background: #8cf1d9;
+}
+.right{
+	background: #92f18c;
+}
+.center{
+	background: #ea9cdd;
+}
+h4{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+	color: #313030;
+}
+/*******************************浮动开始*****************************/
+.layout.float{
+	height: 100px;
+	background: #f5f5f5;
+}
+.float .left{
+	float: left;
+}
+.float .right{
+	float: right;
+}
+/*.float .center{
+	margin-right: 300px;
+	margin-left: 300px;
+}*/
+
+/*******************************浮动结束*****************************/
+
+/*******************************绝对定位开始*****************************/
+.layout.absolute{
+	height: 100px;
+	background: #f2f2f2;
+}
+.absolute .left{
+	position: absolute;
+	left:0;
+}
+.absolute .center{
+	position: absolute;
+	left:300px;
+	right:300px;
+}
+.absolute .right{
+	position: absolute;
+	right: 0;
+}
+/*******************************绝对定位结束*****************************/
+
+/*******************************BFC开始*****************************/
+/*BFC 区域，不会与浮动元素重叠*/
+
+.layout.bfc{
+	height: 100px;
+	background: #f5f5f5;
+}
+.bfc .left{
+	float: left;
+}
+.bfc .right{
+	float: right;
+}
+.bfc .center{
+	overflow: hidden;
+}
+/*******************************BFC结束*****************************/
+
+
+/*******************************flexbox开始*****************************/
+.layout.flex{
+	display: flex;
+	height: 100px;
+	background: #f2f2f2;
+}
+.flex .center{
+	flex: 1;
+}
+/*******************************flexbox结束*****************************/
+
+/*******************************table开始*****************************/
+.layout.table{
+	display: table;
+	width: 100%;
+}
+.table>div{
+	display: table-cell;
+}
+/*******************************table结束*****************************/
+
+/*******************************grid开始*****************************/
+.layout.grid{
+	width:100%;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 300px auto 300px;
+}
+
+/*******************************grid结束*****************************/
+
+
+/*******************************双飞翼开始*****************************/
+.wing{
+	overflow: hidden;
+}
+.wing .content {
+    float: left;
+    width: 100%;
+    background: #ea9cdd;
+}
+.wing .center {
+    height: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.wing .left {
+	float: left;
+	margin-left: -100%;
+}
+.wing .right {
+	float: right;
+	margin-left: -300px;
+}
+/*******************************双飞翼结束*****************************/
+
+/*******************************圣杯开始*****************************/
+.holy{
+	overflow: hidden;
+}
+.holy .container {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.holy .center {
+    float: left;
+    width: 100%;
+}
+.holy .left {
+    float: left;
+    margin-left: -100%;
+    position: relative;
+    left: -300px;
+}
+.holy .right {
+    float: left;
+    margin-left: -300px;
+    position: relative;
+    right: -300px;
+}
+/*******************************圣杯开始*****************************/

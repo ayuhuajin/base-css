@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="google" value="notranslate">
+        <meta name="keywords" content="wsinghai">
+        <meta name="description" content="wsinghai">
+        <link rel="stylesheet" type="text/css" href="./reset.css">
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <title>三栏布局</title>
+        <script type="text/javascript">
+            (function() {
+                // 页面头部 兼容IE8 使IE8识别HTML5元素
+                var a = [ 'section', 'article', 'nav', 'header', 'footer', 'aside' /* 其他HTML5元素 */];
+                for (var i = 0, j = a.length; i < j; i++) {
+                    document.createElement(a[i]);
+                }
+            })();
+        </script>
+    </head>
+    <body>
+        <div>
+            <!-- 浮动布局 -->
+            <h4>浮动布局</h4>
+            <section class="layout float">
+                <div class="left">
+                    左左左wsinghai嗨前端左左左
+                </div>
+                <div class="right">
+                    右右右wsinghai嗨前端右右右
+                </div>
+                <div class="center">
+                    中中中wsinghai嗨前端中中中
+                </div>
+            </section>
+            
+            <!-- 绝对定位布局 -->
+            <h4>绝对定位布局</h4>
+            <section class="layout absolute">
+                <div class="left">
+                    左左左wsinghai嗨前端左左左
+                </div>
+                <div class="center">
+                    中中中wsinghai嗨前端中中中
+                </div>
+                <div class="right">
+                    右右右wsinghai嗨前端右右右
+                </div>
+            </section>
+            
+            <!-- BFC布局 -->   <!-- BFC 区域，不会与浮动元素重叠。 -->
+            <h4>BFC布局</h4>
+            <section class="layout bfc">
+                <div class="left">
+                    左左左wsinghai嗨前端左左左
+                </div>
+                <div class="right">
+                    右右右wsinghai嗨前端右右右
+                </div>
+                <div class="center">
+                    中中中wsinghai嗨前端中中中
+                </div>
+            </section>
+            
+            <!-- flexbox布局 -->
+            <h4>flexbox布局</h4>
+            <section class="layout flex">
+                <div class="left">
+                    左左左wsinghai嗨前端左左左
+                </div>
+                <div class="center">
+                    中中中wsinghai嗨前端中中中
+                </div>
+                <div class="right">
+                    右右右wsinghai嗨前端右右右
+                </div>
+            </section>
+
+            <!-- table布局 -->
+            <h4>table布局</h4>
+            <section class="layout table">
+                <div class="left">
+                    左左左wsinghai嗨前端左左左
+                </div>
+                <div class="center">
+                    中中中wsinghai嗨前端中中中
+                </div>
+                <div class="right">
+                    右右右wsinghai嗨前端右右右
+                </div>
+            </section>
+            
+            <!-- 网格布局 -->
+            <h4>网格布局</h4>
+            <section class="layout grid">
+                <div class="left">
+                    左左左wsinghai嗨前端左左左
+                </div>
+                <div class="center">
+                    中中中wsinghai嗨前端中中中
+                </div>
+                <div class="right">
+                    右右右wsinghai嗨前端右右右
+                </div>
+            </section>
+
+            <!-- 双飞翼布局 -->
+            <h4>双飞翼布局</h4>
+            <section class="layout wing">
+                <div class="content">
+                    <div class="center">中中中wsinghai嗨前端中中中</div>
+                </div>
+                <div class="left">左左左wsinghai嗨前端左左左</div>
+                <div class="right">右右右wsinghai嗨前端右右右</div>
+            </section>
+
+            <!-- 圣杯布局 -->
+            <h4>圣杯布局</h4>
+            <section class="layout holy">
+                <div class="container">
+                    <div class="center">中中中wsinghai嗨前端中中中</div>
+                    <div class="left">左左左wsinghai嗨前端左左左</div>
+                    <div class="right">右右右wsinghai嗨前端右右右</div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

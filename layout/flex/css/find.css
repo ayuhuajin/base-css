@@ -1,0 +1,107 @@
+/*---------------------------CSS.reset-------------------------------------*/
+body{color:#666;font-family:"微软雅黑";font-size:14px;background:white;}
+body,dl,dd,h1,h2,h3,h4,h5,h6,p,form,ul,ol{margin:0;} ol,ul{padding:0;list-style:none outside none;}
+h4,h5,h6{font-size:1em;}
+input,textarea,select{ font-size: 100%;font-family:inherit;} 
+a,img{border:0;}
+a{-webkit-user-select: none;text-decoration: none;-webkit-tap-highlight-color: transparent;color: #000;
+background-color: transparent;-webkit-touch-callout:none;}
+a:active,a:hover{outline:0;}
+input,textarea{outline:none;}
+/*--------------------------------H5样式reset----------------------------------*/
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+/*--------------------------------公共样式----------------------------------*/
+
+html{
+    font-size: 50px;
+}
+li{
+    list-style: none;
+}
+header img{
+    display: block;
+    width:100%;
+}
+h4{
+    padding-left: .2rem;
+    line-height: .64rem;
+    border-bottom:1px solid #ddd;
+}
+footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background: #666;
+    color:white;
+}
+p{
+    text-align: center;
+}
+.content{
+    padding-bottom: 30px;
+}
+.sort{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding:.4rem .2rem;
+}
+.sort li{
+    flex:0 0 25%;
+
+    /* 以上相当于
+    flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+    .item {
+    flex-grow: <number>; /* default 0 
+    }*/
+    flex-grow: 0; 
+    /* flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
+    .item {
+      flex-shrink: <number>; /* default 1 
+    } */
+    flex-shrink: 0;
+    /* flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
+    .item {
+      flex-basis: <length> | auto; /* default auto
+    } */
+    flex-basis: 25%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.four{
+    /* .item {
+        order: <integer>;
+      } 
+    order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。可负值 */
+    order: -1;
+}
+.six{
+    flex-grow: 2;
+}
+.five{
+    /* align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。 */
+    align-self: flex-end;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:3px;
+}
+footer li{
+    height: 60px;
+    line-height: 1;
+    flex:0 0 33.333%;
+    text-align: center;
+    align-self: center;
+}
+footer li img{
+    height: 40px;
+}

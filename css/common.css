@@ -127,4 +127,7 @@ li {
     border: 1px solid #0a91e6;
     background: #03aced no-repeat 97% center; }
 
+.readonly {
+  pointer-events: none; }
+
 /*# sourceMappingURL=common.css.map */

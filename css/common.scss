@@ -156,3 +156,8 @@ li {
     background: #03aced no-repeat 97% center;
   }
 }
+
+// 禁止点击
+.readonly{
+  pointer-events: none;
+}

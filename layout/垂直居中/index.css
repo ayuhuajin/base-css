@@ -1,0 +1,152 @@
+html,body{
+	color:#14191e;
+	background: #f2f2f2;
+}
+body{
+	padding: 20px 400px;
+}
+.content{
+	height:200px;
+	margin-top: 15px;
+	border:1px solid #ddd;
+	border-radius: 5px;
+}
+h4{
+	margin-top: 25px;
+	text-align: center;
+}
+section{
+	text-align: center;
+}
+
+/*********************利用absolute拉伸特性垂直居中 IE8+***********************/
+.absolute.auto .content{
+	position: relative;
+}
+.absolute.auto .content p{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+}
+
+/*********************table特性vertical-align***********************/
+.table{
+	display: table;
+}
+.table .content{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*********************absolute + margin 负值***********************/
+.absolute .content{
+	position: relative;
+}
+.absolute .content p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 100px;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+/*********************line-height 单行文本居中***********************/
+.line-height .content p {
+	line-height: 200px;
+}
+
+
+/*********************:before多行文本未知高度垂直居中 inline 需要有个参照物***********************/
+.before{
+	margin-bottom: 15px;
+}
+.before .content{
+    font-size: 0;
+}
+.before .content:before{
+	content: '我是那个备胎元素';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
+.before .content p{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+
+/*********************table多行文本居中***********************/
+.table{
+	margin-top: 15px;
+}
+.table.multi {
+    height: 200px;
+    width: 400px;
+    margin-top: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+}
+.table.multi .content{
+	margin-top: 15px;
+	width: 400px;
+}
+
+/*********************一行多列文本居中***********************/
+.multi.column .content{
+	display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    width: 400px;
+}
+.multi.column .content p{
+	width: 100px;
+    height: 60px;
+    border: 1px solid #fff;
+    display: inline-block;
+    line-height: 60px;
+}
+
+/********************flex垂直居中***********************/
+.flex .content{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+/********************左右浮动--垂直居中***********************/
+.float{
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.float .left{
+	float: left;
+}
+.float .right{
+	float:right;
+}
+.float .wrap{
+	clear: both;
+    height: 72px;
+    display: inline-block;
+    width: 400px;
+}
+.float p{
+	height: 70px;
+    line-height: 70px;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    border: 1px solid #fff;
+}

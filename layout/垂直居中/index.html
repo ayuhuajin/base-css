@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="google" value="notranslate">
+        <meta name="keywords" content="wsinghai">
+        <meta name="description" content="wsinghai">
+        <link rel="stylesheet" type="text/css" href="./reset.css">
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <title>垂直居中</title>
+        <script type="text/javascript">
+            (function() {
+                // 页面头部 兼容IE8 使IE8识别HTML5元素
+                var a = [ 'section', 'article', 'nav', 'header', 'footer', 'aside' /* 其他HTML5元素 */];
+                for (var i = 0, j = a.length; i < j; i++) {
+                    document.createElement(a[i]);
+                }
+            })();
+        </script>
+    </head>
+    <body>
+        <div>
+            <h4>利用absolute拉伸特性垂直居中 IE8+</h4>
+            <section class="absolute auto">
+                <div class="content">
+                    <p>嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端</p>
+                </div>
+            </section>
+            
+            <h4>table特性vertical-align</h4>
+            <section class="table">
+                <div class="content">
+                    <p>嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端</p>
+                </div>
+            </section>
+            
+            <h4>absolute + margin 负值</h4>
+            <section class="absolute">
+                <div class="content">
+                    <p>嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端</p>
+                </div>
+            </section>
+            
+            <h4>line-height 单行文本居中</h4>
+            <section class="line-height">
+                <div class="content">
+                    <p>单行文本垂直居中嗨前端</p>
+                </div>
+            </section>
+            
+            <h4>before多行文本未知高度垂直居中 inline 需要有个参照物</h4>
+            <section class="before">
+                <div class="content">
+                    <p>嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端</p>
+                </div>
+            </section>
+            
+            <h4>table多行文本居中</h4>
+            <section class="table multi">
+                <div class="content">
+                    <p>嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨</p>
+                    <p>嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨</p>
+                    <p>嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨</p>
+                    <p>嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨前端嗨</p>
+                </div>
+            </section>
+
+
+            <h4>一行多列行文本居中</h4>
+            <section class="multi column">
+                <div class="content">
+                    <p>嗨前端</p>
+                    <p>嗨前端</p>
+                    <p>嗨前端</p>
+                </div>
+            </section>
+
+
+            <h4>flexbox 垂直居中</h4>
+            <section class="flex">
+                <div class="content">
+                    <p>嗨前端</p>
+                </div>
+            </section>
+
+            <h4>左右浮动--垂直居中</h4>
+            <section class="float">
+                <div class="wrap">
+                    <p class="left">嗨前端</p>
+                    <p class="right">嗨前端</p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

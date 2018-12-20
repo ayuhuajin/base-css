@@ -1,0 +1,119 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0
+}
+
+header { 
+    height:4rem;
+    line-height:4rem;
+    text-align:center;
+    background:#8cf1d9;
+}
+footer {
+    height:4rem;
+    line-height:4rem;
+    text-align:center;
+    background:#92f18c; 
+}
+ /*********************** position 布局 **********************/
+footer.position{
+    position:absolute;
+    z-index:200;
+    bottom:0;
+    width:100%;
+}
+header.position{
+    position:absolute;
+    z-index:5;
+    top:0;
+    width:100%;
+}
+.position .main {
+    position:absolute;
+    z-index:10;
+    bottom:4rem;
+    top:4rem;
+    width:100%;
+    overflow:auto;
+    background:pink;
+}
+.position .center{
+    height: 2000px;
+    overflow: auto;
+}
+
+
+
+ /*********************** flex 布局 **********************/
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.flex footer{
+    position: fixed;
+    width: 100%;
+    bottom:0;
+}
+.flex .main{
+    flex:1;
+}
+.flex .main .center{
+    height: 100%;
+    overflow: auto;
+}
+
+
+
+ /*********************** table 布局 **********************/
+.table{
+    display: table;
+    width: 100%;
+}
+.table header{
+    width: 100%;
+    display: table-row;
+}
+.table footer{
+    width: 100%;
+    display: table-row;
+}
+.table .main{
+    display: table-row;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+    background-color: #ddd;
+}
+ 
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #fff;
+}
+ 
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #ddd;
+}
