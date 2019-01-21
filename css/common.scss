@@ -184,3 +184,14 @@ table tr:nth-child(odd){background:#F4F4F4;}
 table td:nth-child(even){color:#C00;}      
 /* 第五行   */
 table tr:nth-child(5){background:#73B1E0;color:#FFF;}
+
+
+//去除type=number 输入款上下箭头
+input[type=number] {  
+  -moz-appearance:textfield;  
+}  
+input[type=number]::-webkit-inner-spin-button,  
+input[type=number]::-webkit-outer-spin-button {  
+    -webkit-appearance: none;  
+    margin: 0;  
+}  
