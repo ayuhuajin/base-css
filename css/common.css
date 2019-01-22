@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*********** 公共样式 **********/
+.part {
+  margin-top: 20px; }
+
 /*********** IOS 优化滚动 开始 **********/
 .IOSscroll {
   -webkit-overflow-scrolling: touch; }
@@ -87,8 +91,7 @@
   .switch:after {
     position: absolute;
     content: "";
-    background-size: 0.2rem 0.2rem;
-    top: 0.02rem;
+    top: 0.08rem;
     right: 0px;
     width: 0.4rem;
     height: 0.2rem;
@@ -119,10 +122,21 @@
     font-size: 14px;
     color: #999; }
 
-.productul li {
-  transition: all 0.25s ease-in-out; }
+.animation {
+  display: flex;
+  justify-content: space-between; }
 
-.productul li:hover {
+.animation li {
+  flex: 0 0 48%;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  color: #666;
+  font-size: 16px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer; }
+
+.animation li:hover {
   margin-left: -3px;
   margin-top: -3px;
   -webkit-box-shadow: 0 0 10px #959595;
@@ -130,7 +144,7 @@
   box-shadow: 0 0 10px #959595;
   transition: all 0.15s ease-in-out; }
 
-li {
+.character li {
   margin-top: 14px;
   padding-left: 20px;
   border-radius: 5px;
@@ -140,10 +154,10 @@ li {
   overflow: hidden;
   line-height: 48px;
   background: #f87b7b no-repeat 97% center; }
-  li:nth-child(2) {
+  .character li:nth-child(2) {
     border: 1px solid #0a91e6;
     background: #03aced no-repeat 97% center; }
-  li input {
+  .character li input {
     padding-left: 10px;
     border: none;
     border-radius: 5px;

@@ -1,3 +1,8 @@
+
+/*********** 公共样式 **********/
+.part{
+  margin-top:20px;
+}
 /*********** IOS 优化滚动 开始 **********/
 
 .IOSscroll {
@@ -111,8 +116,7 @@
   &:after {
     position: absolute; // content: url(../../assets/images/bussinessReport/icon_time_switch@2x.png);
     content: "";
-    background-size: 0.2rem 0.2rem;
-    top: 0.02rem;
+    top: 0.08rem;
     right: 0px;
     width: 0.4rem;
     height: 0.2rem;
@@ -150,10 +154,21 @@
 }
 
 // :hover简单动画效果
-.productul li{
-  transition:all 0.25s ease-in-out;
+.animation {
+  display: flex;
+  justify-content: space-between;
 }
-.productul li:hover {
+.animation li{
+  flex:0 0 48%;
+  padding:10px;
+  border:1px solid #eee;
+  border-radius:5px;
+  color:#666;
+  font-size:16px;
+  transition:all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.animation li:hover {
   margin-left: -3px;
   margin-top: -3px;
   -webkit-box-shadow: 0 0 10px #959595;
@@ -163,29 +178,32 @@
 }
 
 // nth 选中某个元素
-li {
-  margin-top: 14px;
-  padding-left: 20px;
-  border-radius: 5px;
-  border: 1px solid #f64f4f;
-  font-size: 16px;
-  color: #fff;
-  overflow: hidden;
-  line-height: 48px;
-  background:#f87b7b no-repeat 97% center;
-  &:nth-child(2) {
-    border: 1px solid #0a91e6;
-    background: #03aced no-repeat 97% center;
-  }
-  input{
-    padding-left:10px;
-    border:none;
-    border-radius:5px;
-    vertical-align: baseline;
-    line-height: 40px;
-    color:#666;
+.character{
+  li {
+    margin-top: 14px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #f64f4f;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+    line-height: 48px;
+    background:#f87b7b no-repeat 97% center;
+    &:nth-child(2) {
+      border: 1px solid #0a91e6;
+      background: #03aced no-repeat 97% center;
+    }
+    input{
+      padding-left:10px;
+      border:none;
+      border-radius:5px;
+      vertical-align: baseline;
+      line-height: 40px;
+      color:#666;
+    }
   }
 }
+
 
 // 禁止点击
 .readonly{
