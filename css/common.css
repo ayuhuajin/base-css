@@ -63,22 +63,20 @@
   .url-layout wbr:after {
     content: "\00200B"; }
 
-::-webkit-input-placeholder {
+/********** placeHolder样式 **********/
+.placehoder-style ::-webkit-input-placeholder {
   color: #b0b0b0;
   /* WebKit, Blink, Edge */
   font-size: 14px; }
-
-:-moz-placeholder {
+.placehoder-style :-moz-placeholder {
   color: #b0b0b0;
   /* Mozilla Firefox 4 to 18 */
   font-size: 14px; }
-
-::-moz-placeholder {
+.placehoder-style ::-moz-placeholder {
   color: #b0b0b0;
   /* Mozilla Firefox 19+ */
   font-size: 14px; }
-
-:-ms-input-placeholder {
+.placehoder-style :-ms-input-placeholder {
   color: #b0b0b0;
   /* Internet Explorer 10-11 */
   font-size: 14px; }
@@ -166,7 +164,8 @@
     color: #666; }
 
 .readonly {
-  pointer-events: none; }
+  pointer-events: none;
+  background: #eee; }
 
 /****************************** 表格（form） ******************************/
 /* 奇数行 */

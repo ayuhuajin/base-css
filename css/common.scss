@@ -83,29 +83,30 @@
   }
 }
 
-::-webkit-input-placeholder {
-  color: #b0b0b0;
-  /* WebKit, Blink, Edge */
-  font-size: 14px;
+/********** placeHolder样式 **********/
+.placehoder-style{
+  ::-webkit-input-placeholder {
+    color: #b0b0b0;
+    /* WebKit, Blink, Edge */
+    font-size: 14px;
+  }
+  :-moz-placeholder {
+    color: #b0b0b0;
+    /* Mozilla Firefox 4 to 18 */
+    font-size: 14px;
+  }
+  ::-moz-placeholder {
+    color: #b0b0b0;
+    /* Mozilla Firefox 19+ */
+    font-size: 14px;
+  }
+  :-ms-input-placeholder {
+    color: #b0b0b0;
+    /* Internet Explorer 10-11 */
+    font-size: 14px;
+  }
 }
 
-:-moz-placeholder {
-  color: #b0b0b0;
-  /* Mozilla Firefox 4 to 18 */
-  font-size: 14px;
-}
-
-::-moz-placeholder {
-  color: #b0b0b0;
-  /* Mozilla Firefox 19+ */
-  font-size: 14px;
-}
-
-:-ms-input-placeholder {
-  color: #b0b0b0;
-  /* Internet Explorer 10-11 */
-  font-size: 14px;
-}
 
 // :after 带背景图
 .switch {
@@ -208,6 +209,7 @@
 // 禁止点击
 .readonly{
   pointer-events: none;
+  background: #eee;
 }
 
 // 水平垂直都居中
