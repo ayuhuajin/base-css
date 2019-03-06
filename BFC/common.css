@@ -1,0 +1,63 @@
+.desc {
+  line-height: 1.4; }
+
+#app {
+  padding: 20px 0;
+  color: #333;
+  overflow: hidden; }
+
+.desc {
+  margin-top: 10px; }
+  .desc h3 {
+    margin-bottom: 8px;
+    color: #333; }
+  .desc p {
+    line-height: 1.5; }
+
+.par {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: white; }
+
+p {
+  color: #666;
+  font-size: 14px; }
+
+.father {
+  overflow: hidden;
+  background: #85e7ec; }
+
+.sun {
+  float: left;
+  background: #2bdfe8; }
+
+.float {
+  float: left;
+  background: #f64f4f; }
+
+.bfc {
+  overflow: hidden;
+  background: #03aced; }
+
+.adaptive {
+  width: 300px;
+  position: relative; }
+
+.aside {
+  height: 50px;
+  margin-bottom: 100px;
+  background: #ff4e00; }
+
+.main {
+  height: 50px;
+  margin-top: 100px;
+  background: #fcc; }
+
+.text {
+  overflow: hidden; }
+
+/*# sourceMappingURL=common.css.map */

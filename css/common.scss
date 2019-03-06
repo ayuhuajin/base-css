@@ -238,3 +238,10 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;  
     margin: 0;  
 }  
+
+.bg-img {
+    display: flex;
+    flex-direction: column;
+    border: 35px solid rgba(255, 255, 255, 0);
+    border-image: url(../images/ui-frame/border-bg.png) 35 fill;
+}

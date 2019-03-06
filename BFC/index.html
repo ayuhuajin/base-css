@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/mobileReset.css" />
+    <link rel="stylesheet" href="./common.css" />
+    <title>BFC实例</title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but nxin_ylw_mobile doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    
+    <div id="app" style="padding:0 15px;">
+      <div class="desc">
+        <h3>哪些元素会生成BFC：</h3>
+        <p>1.根元素。</p>
+        <p>2.float属性不为none</p>
+        <p>3.position为absolute或fixed。</p>
+        <p>4.display为inline-block, table-cell, table-caption, flex, inline-flex。</p>
+        <p>5.overflow不为visible。</p>
+      </div>
+      <!-- BFC规则 -->
+      <div class="desc">
+        <h3>BFC布局规则：</h3>
+        <p>1.内部的Box会在垂直方向，一个接一个地放置。</p>
+        <p>2.Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠</p>
+        <p>3.每个元素的margin box的左边， 与包含块border box的左边相接触(对于从左往右的格式化，否则相反)。即使存在浮动也是如此。</p>
+        <p>4.BFC的区域不会与float box重叠。</p>
+        <p>5.BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。</p>
+        <p>6.计算BFC的高度时，浮动元素也参与计算</p>
+      </div>
+      <!-- BFC实例 -->
+      <!-- BFC 去除浮动带来的影响 -->
+      <section class="par">
+        <p>1.BFC 解决父级元素塌陷</p>
+        <div class="father">
+          <div class="sun">子元素</div>
+        </div>
+      </section>
+      <!-- BFC隔离浮动元素示例 两栏自适应 -->
+      <section class="par">
+        <p>2.BFC 解决父级元素塌陷</p>
+        <div class="float">浮动元素</div>
+        <div class="bfc">BFC隔离浮动示例，BFC隔离浮动示例，BFC隔离浮动示例，BFC隔离浮动示例</div>
+      </section>
+
+      <!-- <section class="par">
+        <div class="adaptive">
+          <div class="aside"></div>
+          <div class="main"></div>
+        </div>
+      </section> -->
+     
+      <section class="par">
+        <p>3.BFC 解决margin重叠</p>
+        <div class="aside"></div>
+        <div class="text">
+            <div class="main"></div>
+        </div>
+      </section>
+
+      <section class="par">
+        <p>总结：因为BFC内部的元素和外部的元素绝对不会互相影响，因此， 当BFC外部存在浮动时，它不应该影响BFC内部Box的布局，BFC会通过变窄，而不与浮动有重叠。同样的，当BFC内部有浮动时，为了不影响外部元素的布局，BFC计算高度时会包括浮动的高度。避免margin重叠也是这样的一个道理。</p>
+      </section>
+      
+    </div>
+  </body>
+</html>
