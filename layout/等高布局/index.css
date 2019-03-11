@@ -1,0 +1,53 @@
+html,body{
+	color:#14191e;
+}
+.contour {
+  overflow: hidden;   /*核心代码*/
+}
+.contour div{
+	display: inline-block;
+	padding-bottom: 500px;  /*核心代码*/
+    margin-bottom: -500px;  /*核心代码*/
+}
+.left{
+	float: left;
+	width: 300px;
+	background: #8cf1d9;
+}
+.right{
+	width: 300px;
+	background: #92f18c;
+}
+h4{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+	color: #313030;
+}
+
+.flex{
+	display: flex;
+}
+.flex div{
+	float: left;
+}
+
+
+.table{
+	width: 100%;
+	display: table;
+}
+.table div{
+	display: table-cell;
+}
+.table .right{
+	float: none;
+}
+.lleft{
+	width: 300px;
+	background: #8cf1d9;
+}
+.rright{
+	width: 300px;
+	background: #92f18c;
+}
