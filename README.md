@@ -11,3 +11,70 @@
 
 5.包含mobile与pc 重置样式
 
+## 项目布局
+```
+├─public
+│  └─img
+│      ├─first
+│      └─second
+└─src             
+    ├─assets
+    │  ─css
+    │  ─images
+    │    └ ─qualityTracing
+    │  └─js
+    ├─common
+    │  └─filter
+    ├─components
+    │  ├─alert
+    │  ├─backEnd
+    │  │  ├─circulationBusinessManage
+    │  │  ├─driverManage
+    │  │  ├─qualityCheckManage
+    │  │  └─qualityTracing
+    │  ├─bigDataPlatform
+    │  ├─buyingAndSelling
+    │  │  ├─fishSales
+    │  │  ├─fryPurchase
+    │  │  └─materialPurchase
+    │  ├─common
+    │  ├─dataAnalyze
+    │  ├─enterpriseBigData
+    │  ├─expense
+    │  │  ├─expenseRecord
+    │  │  └─expenseSetting
+    │  ├─login
+    │  ├─productionControl
+    │  │  ├─cultureCycleManagement
+    │  │  ├─feedingManagement
+    │  │  ├─lossManagement
+    │  │  ├─preventionManagement
+    │  │  ├─productionPlan
+    │  │  ├─proofingManagement
+    │  │  ├─turnPondManagement
+    │  │  └─waterQualityParameters
+    │  │      ├─parameterInput
+    │  │      └─parameterLine
+    │  ├─qualityTracking
+    │  ├─register
+    │  ├─setting
+    │  │  ├─companyManagement
+    │  │  │  ├─baseSetting
+    │  │  │  ├─companySetting
+    │  │  │  ├─cultureBreed
+    │  │  │  ├─pondSetting
+    │  │  │  └─unitInformation
+    │  │  ├─goodsSetting
+    │  │  ├─materialSetting
+    │  │  │  └─tabComponent
+    │  │  ├─personalAuthorityManagement
+    │  │  │  └─PersonManageComponent
+    │  │  ├─purchaseUnit
+    │  │  └─supplierManagement
+    │  ├─smartDevice
+    │  └─tablePackage
+    ├─service
+    ├─store
+    │  └─modules
+    └─views
+```
