@@ -25,3 +25,78 @@ h3{
 .wrap >section div:nth-child(3) {
 	margin-right:0;
 }
+
+
+/* 水平垂直居中方法 */
+/* 方法一 */
+.position{
+	position: relative
+}
+.position p{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
+}
+
+/* 方法二 */
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex p {
+	margin:auto;
+}
+
+/* 方法三 */
+.table{
+	display: table;
+	height: calc((100vh - 80px)/2);
+}
+.table p{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* 方法四 */
+.position-stretch{
+	position: relative;
+}
+.position-stretch p{
+	position: absolute;
+	width: 40%;
+	height: 40%;
+	text-align: center;
+	border:1px solid red;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* 方法五 */
+.absolute{
+	position: relative;
+}
+.absolute p{
+	border:1px solid red;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    margin-top: -15%;
+    margin-left: -15%;
+}
+
+.line-height{
+	height: calc((100vh - 80px)/2);
+}
+.line-height p{
+	line-height: calc((100vh - 80px)/2);
+	text-align: center;
+}
